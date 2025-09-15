@@ -1,0 +1,16 @@
+{
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch --clear-screen=false src/index.ts",
+        "build": "tsc && chmod +x dist/index.js",
+        "test": "vitest",
+        "inspect": "npm run build && npx @modelcontextprotocol/inspector dist/index.js",
+        "setup": "./setup.sh"
+    },
+    "devDependencies": {
+        "tsx": "^4.0.0",
+        "typescript": "^5.0.0",
+        "vitest": "^1.0.0",
+        "@types/node": "^20.0.0"
+    }
+}
